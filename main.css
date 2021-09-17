@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Rick-And-Morty-Wallpaper.jpg');
+    background-size: cover;
+}
+
+nav {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.counter {
+    width: 15%;
+    height: 30px;
+    background-color: teal;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.container {
+    width: 60%;  
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: yellow;
+}
+img {
+    width: 200px;
+    border-radius: 3px 3px 0 0;
+}
+.frame {
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding-bottom: 15px;
+}
+
+.frame>p{
+    margin: 5%
+}
+.frame>button {
+    width: 90%;
+    margin-left: 5%;
+    background-color: whitesmoke;
+    color: green;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 2%;
+}
+
+button:hover{
+    background-color: green;
+    color: whitesmoke;
+}

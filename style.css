@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("Rick-And-Morty-Wallpaper.jpg");
+  background-size: 100vw 100vh;
+}
+
+nav {
+  background-color: #333A40;
+  color: white;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.pagination .first {
+  border-radius: 3px 0 0 3px;
+}
+
+.pagination .last {
+  border-radius: 0 3px 3px 0;
+}
+
+.pagination .first,
+.pagination .last {
+  background-color: #333A40;
+  color: white;
+}
+
+.pagination .first:hover,
+.pagination .last:hover {
+  background-color: #6b6b6b;
+  color: white;
+}
+
+.pagination span {
+  background-color: ivory;
+  width: 15px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.pagination span.active {
+  background-color: #00A74C;
+  color: white;
+}
+
+.pagination span:hover {
+  background-color: #6b6b6b;
+  color: white;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+.container .frame {
+  background-color: whitesmoke;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  padding-bottom: 15px;
+}
+
+.container .frame img {
+  width: 220px;
+  border-radius: 3px 3px 0 0;
+}
+
+.container .frame p {
+  margin: 5%;
+}
+
+.container .frame button {
+  width: 90%;
+  margin-left: 5%;
+  background-color: whitesmoke;
+  color: #00A74C;
+  border: 1px solid #00A74C;
+  border-radius: 3px;
+  padding: 2%;
+}
+
+.container .frame button:hover {
+  background-color: #00A74C;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=style.css.map */

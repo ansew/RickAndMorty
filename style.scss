@@ -1,0 +1,105 @@
+$maingreen: #00A74C;
+$maingray: #333A40;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Rick-And-Morty-Wallpaper.jpg');
+    background-size: 100vw 100vh;
+}
+
+nav {
+    background-color: $maingray;
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    .first {
+        border-radius: 3px 0 0 3px;
+    }
+
+    .last {
+        border-radius: 0 3px 3px 0;
+    }
+
+    .first,
+    .last {
+        background-color: $maingray;
+        color: white;
+
+        &:hover {
+            background-color: rgb(107, 107, 107);
+            color: white;
+        }
+    }
+     
+    // page buttons
+    span {
+        background-color: ivory;
+        width: 15px;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+        
+        &.active {
+            background-color: $maingreen;
+            color: white;
+        }
+
+        &:hover {
+            background-color: rgb(107, 107, 107);
+            color: white;
+        }
+    }
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+
+    .frame {
+        background-color: whitesmoke;
+        margin-bottom: 40px;
+        border-radius: 3px;
+        padding-bottom: 15px;
+        
+        img {
+            width: 220px;
+            border-radius: 3px 3px 0 0;
+        }
+
+        p {
+            margin: 5%
+        }
+
+        button {
+            width: 90%;
+            margin-left: 5%;
+            background-color: whitesmoke;
+            color: $maingreen;
+            border: 1px solid $maingreen;
+            border-radius: 3px;
+            padding: 2%;
+
+            &:hover {
+                background-color: $maingreen;
+                color: whitesmoke;
+            }
+        }
+    }
+}
